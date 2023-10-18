@@ -1,0 +1,47 @@
+.converter-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  height: 50%;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.171);
+}
+.converter-area * {
+  background-color: inherit;
+}
+.converter-area .valute-input-area {
+  display: flex;
+  height: 4rem;
+  width: 60%;
+}
+.converter-area .valute-input-area .input-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.converter-area .valute-input-area .input-area label {
+  text-align: center;
+  font-size: 1.2rem;
+  height: 2rem;
+}
+.converter-area .valute-input-area input,
+.converter-area .valute-input-area select {
+  height: 2rem;
+  outline: none;
+}
+.converter-area .valute-input-area input {
+  border-width: 1px 0px 1px 1px;
+  border-radius: 4px 0px 0px 4px;
+}
+.converter-area .valute-input-area select {
+  border-width: 1px 1px 1px 0px;
+  border-radius: 0px 4px 4px 0px;
+  margin-top: 2rem;
+}

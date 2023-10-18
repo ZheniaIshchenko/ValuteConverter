@@ -1,0 +1,25 @@
+<div class="converter-area">
+    <div class="valute-input-area">
+        <div class="input-area">
+            <label for="firstInput">{{firstInputLabel}}</label>
+            <input (input)="recountRate(true)" [(ngModel)]="firstInput" id="firstInput" type="number">
+        </div>
+        
+        <select (change)="setValute(true,$event.target)" name="" id="firstValute">
+            <option value="USD">$ USD</option>
+            <option value="EUR">€ EUR</option>
+            <option value="UAH">₴ UAH</option>
+        </select>
+    </div>
+    <div class="valute-input-area" >
+        <div class="input-area">
+            <label for="secondInput">{{secondInputLabel}}</label>
+            <input (input)="recountRate(false)" [(ngModel)]="secondInput" id="secondInput" type="number">
+        </div>
+        <select (change)="setValute(false,$event.target)" name="" id="secondValute">
+            <option value="USD">$ USD</option>
+            <option value="EUR">€ EUR</option>
+            <option selected="selected" value="UAH">₴ UAH</option>
+        </select>
+    </div>
+</div>

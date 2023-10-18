@@ -1,0 +1,55 @@
+.converter-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 60%;
+    height: 50%;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 2rem;
+
+    background-color: rgb(245, 245, 245);
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.171);
+
+    & *{
+        background-color: inherit;
+    }
+
+    .valute-input-area{
+        display: flex;
+        height: 4rem;
+        width: 60%;
+
+        .input-area{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            width: 100%;
+
+            label{
+                text-align: center;
+                font-size: 1.2rem;
+                height: 2rem;
+            }
+        }
+        input,select{
+            height: 2rem;
+            
+            outline: none;
+        }
+        input{
+            border-width: 1px 0px 1px 1px;
+            border-radius: 4px 0px 0px 4px;
+        }
+        select{
+            border-width: 1px 1px 1px 0px;
+            border-radius: 0px 4px 4px 0px;
+            margin-top: 2rem;
+        }
+    }
+}
+
