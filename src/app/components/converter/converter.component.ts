@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Rate } from 'src/app/interfaces/rate';
 import { CurrentRatesService } from 'src/app/services/current-rates.service';
 
 @Component({
@@ -20,7 +21,7 @@ export class ConverterComponent {
   secondInputLabel: string = "UAH";
   
   constructor(ratesAPI: CurrentRatesService){
-    ratesAPI.rates.subscribe(rates => {
+    ratesAPI.rates.subscribe(() => {
       this.usdRate = ratesAPI.usdRate
       this.euroRate = ratesAPI.euroRate
       this.currentFirstValuteK = this.usdRate

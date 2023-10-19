@@ -8,12 +8,10 @@ import { CurrentRatesService } from 'src/app/services/current-rates.service';
   styleUrls: ['./valutes-rate.component.less']
 })
 export class ValutesRateComponent {
-  rates: Rate[];
   usdRate: number;
   euroRate: number;
   constructor(ratesAPI: CurrentRatesService){
-    ratesAPI.rates.subscribe(rates => {
-      this.rates = rates
+    ratesAPI.rates.subscribe(() => {
       this.usdRate = ratesAPI.usdRate
       this.euroRate = ratesAPI.euroRate
     })
